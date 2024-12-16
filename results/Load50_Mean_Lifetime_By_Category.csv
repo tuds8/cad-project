@@ -1,0 +1,4 @@
+run,repetition,module,name,value
+Load50-0-20241209-00:21:13-35196,0,RadioSch2.sink,hpLifetime:mean,0.00050891919361062
+Load50-0-20241209-00:21:13-35196,0,RadioSch2.sink,lpLifetime:mean,0.0021675465814491
+Load50-0-20241209-00:21:13-35196,0,RadioSch2.sink,mpLifetime:mean,0.0010477936240817

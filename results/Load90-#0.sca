@@ -1,0 +1,156 @@
+version 3
+run Load90-0-20241209-00:33:16-37036
+attr configname Load90
+attr datetime 20241209-00:33:16
+attr datetimef 20241209-003316
+attr experiment Load90
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsd ""
+attr iterationvarsf ""
+attr measurement ""
+attr network RadioSch2
+attr processid 37036
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+config description "low job arrival rate"
+config *.usersCount 10
+config *.scheduler.nrOfChannels 30
+config *.scheduler.schedulingPeriod 1ms
+config **.user[*].generator.netwload 0.9
+config **.user[*].generator.nrUsers 10
+config **.user[*].generator.nrOfChannels 30
+config **.user[*].generator.nrPackets 100
+config network RadioSch2
+config sim-time-limit 100s
+config cpu-time-limit 300s
+
+par RadioSch2.scheduler typename "\"Scheduler\""
+par RadioSch2.scheduler schedulingPeriod 1ms
+attr unit ms
+par RadioSch2.scheduler gateSize 10
+par RadioSch2.scheduler nrOfChannels 30
+par RadioSch2.sink typename "\"Sink\""
+par RadioSch2.sink gateSize 10
+scalar RadioSch2.sink lpLifetime:mean 0.0022651769894579
+attr recordingmode mean
+attr title "LP Packet Lifetime, mean"
+attr unit s
+scalar RadioSch2.sink mpLifetime:mean 0.0011942546920672
+attr recordingmode mean
+attr title "MP Packet Lifetime, mean"
+attr unit s
+scalar RadioSch2.sink hpLifetime:mean 0.00052474423869721
+attr recordingmode mean
+attr title "HP Packet Lifetime, mean"
+attr unit s
+scalar RadioSch2.sink lifetime:mean 0.0013891187615718
+attr recordingmode mean
+attr title "Packet Lifetime, mean"
+attr unit s
+par RadioSch2.user[0].generator typename "\"Source\""
+par RadioSch2.user[0].generator sendIaTime 10ms
+attr unit ms
+par RadioSch2.user[0].generator netwload 0.9
+par RadioSch2.user[0].generator nrUsers 10
+par RadioSch2.user[0].generator nrOfChannels 30
+par RadioSch2.user[0].generator nrPackets 100
+par RadioSch2.user[0].myqq typename "\"myQ\""
+par RadioSch2.user[0].myqq qlp 5
+par RadioSch2.user[0] typename "\"User\""
+par RadioSch2.user[1].generator typename "\"Source\""
+par RadioSch2.user[1].generator sendIaTime 10ms
+attr unit ms
+par RadioSch2.user[1].generator netwload 0.9
+par RadioSch2.user[1].generator nrUsers 10
+par RadioSch2.user[1].generator nrOfChannels 30
+par RadioSch2.user[1].generator nrPackets 100
+par RadioSch2.user[1].myqq typename "\"myQ\""
+par RadioSch2.user[1].myqq qlp 5
+par RadioSch2.user[1] typename "\"User\""
+par RadioSch2.user[2].generator typename "\"Source\""
+par RadioSch2.user[2].generator sendIaTime 10ms
+attr unit ms
+par RadioSch2.user[2].generator netwload 0.9
+par RadioSch2.user[2].generator nrUsers 10
+par RadioSch2.user[2].generator nrOfChannels 30
+par RadioSch2.user[2].generator nrPackets 100
+par RadioSch2.user[2].myqq typename "\"myQ\""
+par RadioSch2.user[2].myqq qlp 5
+par RadioSch2.user[2] typename "\"User\""
+par RadioSch2.user[3].generator typename "\"Source\""
+par RadioSch2.user[3].generator sendIaTime 10ms
+attr unit ms
+par RadioSch2.user[3].generator netwload 0.9
+par RadioSch2.user[3].generator nrUsers 10
+par RadioSch2.user[3].generator nrOfChannels 30
+par RadioSch2.user[3].generator nrPackets 100
+par RadioSch2.user[3].myqq typename "\"myQ\""
+par RadioSch2.user[3].myqq qlp 5
+par RadioSch2.user[3] typename "\"User\""
+par RadioSch2.user[4].generator typename "\"Source\""
+par RadioSch2.user[4].generator sendIaTime 10ms
+attr unit ms
+par RadioSch2.user[4].generator netwload 0.9
+par RadioSch2.user[4].generator nrUsers 10
+par RadioSch2.user[4].generator nrOfChannels 30
+par RadioSch2.user[4].generator nrPackets 100
+par RadioSch2.user[4].myqq typename "\"myQ\""
+par RadioSch2.user[4].myqq qlp 5
+par RadioSch2.user[4] typename "\"User\""
+par RadioSch2.user[5].generator typename "\"Source\""
+par RadioSch2.user[5].generator sendIaTime 10ms
+attr unit ms
+par RadioSch2.user[5].generator netwload 0.9
+par RadioSch2.user[5].generator nrUsers 10
+par RadioSch2.user[5].generator nrOfChannels 30
+par RadioSch2.user[5].generator nrPackets 100
+par RadioSch2.user[5].myqq typename "\"myQ\""
+par RadioSch2.user[5].myqq qlp 5
+par RadioSch2.user[5] typename "\"User\""
+par RadioSch2.user[6].generator typename "\"Source\""
+par RadioSch2.user[6].generator sendIaTime 10ms
+attr unit ms
+par RadioSch2.user[6].generator netwload 0.9
+par RadioSch2.user[6].generator nrUsers 10
+par RadioSch2.user[6].generator nrOfChannels 30
+par RadioSch2.user[6].generator nrPackets 100
+par RadioSch2.user[6].myqq typename "\"myQ\""
+par RadioSch2.user[6].myqq qlp 5
+par RadioSch2.user[6] typename "\"User\""
+par RadioSch2.user[7].generator typename "\"Source\""
+par RadioSch2.user[7].generator sendIaTime 10ms
+attr unit ms
+par RadioSch2.user[7].generator netwload 0.9
+par RadioSch2.user[7].generator nrUsers 10
+par RadioSch2.user[7].generator nrOfChannels 30
+par RadioSch2.user[7].generator nrPackets 100
+par RadioSch2.user[7].myqq typename "\"myQ\""
+par RadioSch2.user[7].myqq qlp 5
+par RadioSch2.user[7] typename "\"User\""
+par RadioSch2.user[8].generator typename "\"Source\""
+par RadioSch2.user[8].generator sendIaTime 10ms
+attr unit ms
+par RadioSch2.user[8].generator netwload 0.9
+par RadioSch2.user[8].generator nrUsers 10
+par RadioSch2.user[8].generator nrOfChannels 30
+par RadioSch2.user[8].generator nrPackets 100
+par RadioSch2.user[8].myqq typename "\"myQ\""
+par RadioSch2.user[8].myqq qlp 5
+par RadioSch2.user[8] typename "\"User\""
+par RadioSch2.user[9].generator typename "\"Source\""
+par RadioSch2.user[9].generator sendIaTime 10ms
+attr unit ms
+par RadioSch2.user[9].generator netwload 0.9
+par RadioSch2.user[9].generator nrUsers 10
+par RadioSch2.user[9].generator nrOfChannels 30
+par RadioSch2.user[9].generator nrPackets 100
+par RadioSch2.user[9].myqq typename "\"myQ\""
+par RadioSch2.user[9].myqq qlp 5
+par RadioSch2.user[9] typename "\"User\""
+par RadioSch2 typename "\"RadioSch2\""
+par RadioSch2 usersCount 10
+

@@ -1,0 +1,52 @@
+file 73523 1733697510                                           
+version 3
+run Load90-0-20241209-00:33:16-37036
+attr configname Load90
+attr datetime 20241209-00:33:16
+attr datetimef 20241209-003316
+attr experiment Load90
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsd ""
+attr iterationvarsf ""
+attr measurement ""
+attr network RadioSch2
+attr processid 37036
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+config description "low job arrival rate"
+config *.usersCount 10
+config *.scheduler.nrOfChannels 30
+config *.scheduler.schedulingPeriod 1ms
+config **.user[*].generator.netwload 0.9
+config **.user[*].generator.nrUsers 10
+config **.user[*].generator.nrOfChannels 30
+config **.user[*].generator.nrPackets 100
+config network RadioSch2
+config sim-time-limit 100s
+config cpu-time-limit 300s
+
+vector 0 RadioSch2.sink lifetime:vector ETV
+attr recordingmode vector
+attr title "Packet Lifetime"
+attr unit s
+vector 1 RadioSch2.sink hpLifetime:vector ETV
+attr recordingmode vector
+attr title "HP Packet Lifetime"
+attr unit s
+vector 2 RadioSch2.sink mpLifetime:vector ETV
+attr recordingmode vector
+attr title "MP Packet Lifetime"
+attr unit s
+vector 3 RadioSch2.sink lpLifetime:vector ETV
+attr recordingmode vector
+attr title "LP Packet Lifetime"
+attr unit s
+0	1297 36112 35 54473 0.001 4.444 1226 6.105399e-06 0.007445903906 1.703059601687 0.0039183986013799
+1	37409 7383 35 54473 0.001 4.444 251 1.0943135e-05 0.001 0.131710803913 8.8373134262075e-05
+2	44792 17531 39 54451 0.001 4.442 595 1.1454053e-05 0.004190117763 0.71058154178 0.0011750274160262
+3	62323 11198 64 54271 0.003 4.427 380 6.105399e-06 0.007445903906 0.860767255994 0.0026549980510917
+
